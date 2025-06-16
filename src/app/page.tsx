@@ -9,6 +9,8 @@ export default function Home() {
     <Adsection adsList ={["/adsfiles/texasclz.gif","/adsfiles/thamesclz.gif","/adsfiles/careerconclave.png"]}/>
     <RegisteredClzList />
     <CareerRoadmap />
+    <Adsection adsList ={["/adsfiles/uniglobe.gif","/adsfiles/ncmt.gif","/adsfiles/globalcollege.gif"]}/>
+
     </>
   );
 }
