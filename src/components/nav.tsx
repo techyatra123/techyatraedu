@@ -15,7 +15,6 @@ export default function Navbar() {
         <li className="cursor-pointer transition hover:-translate-y-0.5 px-2 py-1 rounded">Admission</li>
         <li className="cursor-pointer transition hover:-translate-y-0.5 px-2 py-1 rounded">News & Blogs</li>
         <li className="cursor-pointer transition hover:-translate-y-0.5 px-2 py-1 rounded">Events</li>
-        <li className="cursor-pointer transition hover:-translate-y-0.5 px-2 py-1 rounded">Login</li>
         <li className="cursor-pointer transition  px-2 py-1 rounded bg-white shadow-xl/30 text-blue-500">Login</li>
       </ul>
     </nav>
