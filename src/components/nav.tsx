@@ -1,0 +1,23 @@
+export default function Navbar() {
+  return (
+    <nav
+      className="bg-gradient-to-b from-[#20206B] to-[#46427E] text-white p-4 flex flex-wrap  justify-between items-center border-b-2 border-white-900"
+    >
+      <div className="text-base font-medium mb-2 ml-20 md:mb-0">
+        TECHYATRA EDU
+      </div>
+      <ul className="flex flex-wrap gap-4 text-sm md:text-base overflow-x-auto font-normal mr-16">
+        <li className="cursor-pointer transition hover:-translate-y-0.5 px-2 py-1 rounded">Courses</li>
+        <li className="cursor-pointer transition hover:-translate-y-0.5 px-2 py-1 rounded">Registered Colleges</li>
+        <li className="cursor-pointer transition hover:-translate-y-0.5 px-2 py-1 rounded">Career Roadmap</li>
+        <li className="cursor-pointer transition hover:-translate-y-0.5 px-2 py-1 rounded">Schools</li>
+        <li className="cursor-pointer transition hover:-translate-y-0.5 px-2 py-1 rounded">Colleges</li>
+        <li className="cursor-pointer transition hover:-translate-y-0.5 px-2 py-1 rounded">Admission</li>
+        <li className="cursor-pointer transition hover:-translate-y-0.5 px-2 py-1 rounded">News & Blogs</li>
+        <li className="cursor-pointer transition hover:-translate-y-0.5 px-2 py-1 rounded">Events</li>
+        <li className="cursor-pointer transition hover:-translate-y-0.5 px-2 py-1 rounded">Login</li>
+        <li className="cursor-pointer transition  px-2 py-1 rounded bg-white shadow-xl/30 text-blue-500">Signup</li>
+      </ul>
+    </nav>
+  );
+}
