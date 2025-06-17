@@ -55,12 +55,12 @@ const HeroSection: React.FC = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 w-full pt-12 md:pt-0">
           <button className="relative bg-blue-500 text-white px-4 py-3 rounded shadow-lg hover:shadow-2xl transition duration-300 flex items-center justify-center w-full sm:w-[300px] group">
-            <span className="text-center">Book Now</span>
+            <span className="text-center">Explore our Courses</span>
             <ArrowRight className="absolute right-4 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
           </button>
 
           <button className="relative px-4 py-3 rounded shadow-lg hover:shadow-2xl bg-white transition duration-300 flex items-center justify-center w-full sm:w-[300px] group border-2 border-blue-700">
-            <span className="text-center text-blue-700">Explore Colleges</span>
+            <span className="text-center text-blue-700">Explore Institutions</span>
             <ArrowRight className="absolute text-blue-500 right-4 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
           </button>
         </div>

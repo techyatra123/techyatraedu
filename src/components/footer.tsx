@@ -10,7 +10,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-t from-[#1c224c] to-[#0f1432] text-white px-4 md:px-16 pt-16 pb-6 text-[15px]">
+    <footer className="bg-gradient-to-t from-[#20206B] to-[#000000] text-white px-4 md:px-16 pt-16 pb-6 text-[15px]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
           <h2 className="text-xl font-bold">
@@ -23,7 +23,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3 className="font-semibold mb-4">Links</h3>
+          <h3 className="font-semibold mb-4">For Students</h3>
           <ul className="space-y-2 text-gray-300">
             <li>Courses</li>
             <li>Career Roadmap</li>
@@ -32,21 +32,18 @@ export default function Footer() {
             <li>Aadmission</li>
             <li>News & Blogs</li>
             <li>Registered Colleges</li>
+            <li>Project Showcase</li>
             <li>Events</li>
           </ul>
         </div>
 
         <div>
-          <h3 className="font-semibold mb-4">Links</h3>
+          <h3 className="font-semibold mb-4">Info</h3>
           <ul className="space-y-2 text-gray-300">
-            <li>Courses</li>
-            <li>Career Roadmap</li>
-            <li>Schools</li>
-            <li>Colleges</li>
-            <li>Aadmission</li>
-            <li>News & Blogs</li>
-            <li>Registered Colleges</li>
-            <li>Events</li>
+            <li>About Us</li>
+            <li>Our Team</li>
+            <li>Terms of Use</li>
+            <li>Privacy Policy</li>
           </ul>
         </div>
 
