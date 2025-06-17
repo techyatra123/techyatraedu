@@ -38,9 +38,11 @@ const Upcommingevent = () => {
     <section className="py-10 px-6 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-6">
-          <h2 className="text-2xl font-bold">
-            Upcoming Events
-          </h2>
+          <div>
+            <h6 className="text-gray-500 font-normal">Events</h6>
+            <h2 className="text-2xl font-bold">Upcoming Events</h2>
+          </div>
+
           <a
             href="#"
             className="text-indigo-600 hover:underline flex flex-row justify-center items-center gap-2"
