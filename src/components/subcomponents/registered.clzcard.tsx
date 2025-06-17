@@ -43,7 +43,7 @@ const CollegeCard: FC<CollegeCardProps> = ({
         </div>
         <p className="text-[15px] font-semibold">{title}</p>
 
-        <button className="w-full mt-2 text-indigo-600 border border-indigo-600 rounded-md py-2 hover:bg-indigo-50 transition">
+        <button className="w-full mt-2 text-indigo-600 border cursor-pointer border-indigo-600 rounded-md py-2 hover:bg-indigo-50 transition">
           View Detail
         </button>
       </div>

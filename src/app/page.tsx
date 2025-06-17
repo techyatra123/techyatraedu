@@ -1,9 +1,11 @@
 import Adsection from "@/components/adsection";
 import CareerRoadmap from "@/components/careerRoadmap";
-import Footer from "@/components/footer";
 import HeroSection from "@/components/hero";
+import JoinSection from "@/components/joinus";
 import RegisteredClzList from "@/components/registeredclzlist";
 import SchoolCollege from "@/components/schoolCollege";
+import SubscribeSection from "@/components/subscribe";
+import Testimonials from "@/components/testimonials";
 import Upcommingevent from "@/components/upcomingEvents";
 export default function Home() {
   return (
@@ -26,7 +28,7 @@ export default function Home() {
         ]}
       />
       <SchoolCollege />
-
+      <Testimonials />
       <Adsection
         adsList={[
           "/adsfiles/texasclz.gif",
@@ -35,7 +37,9 @@ export default function Home() {
         ]}
       />
       <Upcommingevent />
-      <Footer />
+      <JoinSection />
+      <SubscribeSection />
+    
     </>
   );
 }
