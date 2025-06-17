@@ -3,6 +3,7 @@ import CareerRoadmap from "@/components/careerRoadmap";
 import HeroSection from "@/components/hero";
 import RegisteredClzList from "@/components/registeredclzlist";
 import SchoolCollege from "@/components/schoolCollege";
+import Upcommingevent from "@/components/upcomingEvents";
 export default function Home() {
   return (
     <>
@@ -32,6 +33,7 @@ export default function Home() {
           "/adsfiles/careerconclave.png",
         ]}
       />
+      <Upcommingevent/>
     </>
   );
 }
