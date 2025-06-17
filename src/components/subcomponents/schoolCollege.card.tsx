@@ -42,7 +42,7 @@ export default function SchoolCard({
         </div>
       </div>
 
-      <button className="mt-4 w-full bg-indigo-600 hover:bg-indigo-700 text-white rounded-md py-2 text-sm font-medium transition">
+      <button className="mt-4 w-full cursor-pointer bg-indigo-600 hover:bg-indigo-700 text-white rounded-md py-2 text-sm font-medium transition">
         Apply
       </button>
     </div>

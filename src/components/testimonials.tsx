@@ -61,13 +61,13 @@ export default function Testimonials() {
           <div className="flex justify-center mt-10 gap-4">
             <button
               onClick={() => scroll("left")}
-              className="bg-white text-black p-2 rounded-full shadow-md hover:bg-gray-200"
+              className="bg-white text-black p-2 cursor-pointer rounded-full shadow-md hover:bg-gray-200"
             >
               <ChevronLeft className="w-6 h-5" />
             </button>
             <button
               onClick={() => scroll("right")}
-              className="bg-white text-black p-2 rounded-full shadow-md hover:bg-gray-200"
+              className="bg-white text-black p-2  cursor-pointer rounded-full shadow-md hover:bg-gray-200"
             >
               <ChevronRight className="w-6 h-5" />
             </button>

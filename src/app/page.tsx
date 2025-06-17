@@ -1,6 +1,5 @@
 import Adsection from "@/components/adsection";
 import CareerRoadmap from "@/components/careerRoadmap";
-import Footer from "@/components/footer";
 import HeroSection from "@/components/hero";
 import JoinSection from "@/components/joinus";
 import RegisteredClzList from "@/components/registeredclzlist";
@@ -40,7 +39,6 @@ export default function Home() {
       <Upcommingevent />
       <JoinSection />
       <SubscribeSection />
-      <Footer />
     
     </>
   );

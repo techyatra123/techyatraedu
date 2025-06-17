@@ -27,7 +27,7 @@ const Card: React.FC<CardProps> = ({ title, imageSrc, onClick }) => {
 
       <button
         onClick={onClick}
-        className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md w-full mt-auto"
+        className="bg-indigo-600 cursor-pointer hover:bg-indigo-700 text-white px-4 py-2 rounded-md w-full mt-auto"
       >
         View More
       </button>
