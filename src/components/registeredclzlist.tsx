@@ -1,4 +1,3 @@
-// components/RegisteredColleges.tsx
 import CollegeCard from "./subcomponents/registered.clzcard";
 import { ArrowUpRight } from "lucide-react";
 

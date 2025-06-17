@@ -1,4 +1,3 @@
-// components/CollegeCard.tsx
 import Image from "next/image";
 import { FC } from "react";
 import { Clock, MapPin } from "lucide-react";

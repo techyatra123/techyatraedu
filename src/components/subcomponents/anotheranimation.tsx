@@ -4,10 +4,9 @@ import React from "react";
 import { motion, useTime, useTransform, MotionValue } from "framer-motion";
 
 const ORBIT_RADIUS = 240;
-const CARD_COUNT = 8; // updated to match the number of services
+const CARD_COUNT = 8; 
 const BASE_ORBIT_DURATION = 18;
 
-// Enhanced: 8 vibrant Tailwind color combinations
 const CARD_COLORS: string[] = [
   "bg-gradient-to-br from-green-400 to-emerald-600",
   "bg-gradient-to-br from-indigo-400 to-purple-600",

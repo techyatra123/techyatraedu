@@ -16,7 +16,6 @@ export default function SchoolCard({
   return (
     <div className="bg-white rounded-xl shadow-md p-4 w-full max-w-sm flex flex-col justify-between group">
       <div className="flex gap-3">
-        {/* Image Section */}
         <div className="relative w-[105px] h-44 rounded-lg overflow-hidden">
           <Image
             src={imageUrl}
@@ -26,7 +25,6 @@ export default function SchoolCard({
           />
         </div>
 
-        {/* Info Section */}
         <div className="flex flex-col justify-between flex-grow">
           <div>
             <h3 className="text-lg font-semibold leading-tight line-clamp-2">
@@ -44,7 +42,6 @@ export default function SchoolCard({
         </div>
       </div>
 
-      {/* Button */}
       <button className="mt-4 w-full bg-indigo-600 hover:bg-indigo-700 text-white rounded-md py-2 text-sm font-medium transition">
         Apply
       </button>
