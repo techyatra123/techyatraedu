@@ -2,6 +2,7 @@ import Adsection from "@/components/adsection";
 import CareerRoadmap from "@/components/careerRoadmap";
 import Footer from "@/components/footer";
 import HeroSection from "@/components/hero";
+import JoinSection from "@/components/joinus";
 import RegisteredClzList from "@/components/registeredclzlist";
 import SchoolCollege from "@/components/schoolCollege";
 import Testimonials from "@/components/testimonials";
@@ -37,6 +38,7 @@ export default function Home() {
       />
 
       <Upcommingevent />
+      <JoinSection/>
       <Footer />
     </>
   );
