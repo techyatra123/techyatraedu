@@ -29,7 +29,7 @@ export default function SchoolCard({
         {/* Info Section */}
         <div className="flex flex-col justify-between flex-grow">
           <div>
-            <h3 className="text-sm font-semibold leading-tight line-clamp-2">
+            <h3 className="text-lg font-semibold leading-tight line-clamp-2">
               {name}
             </h3>
             <p className="text-[9px] text-gray-400 mb-2">{location}</p>
