@@ -1,5 +1,6 @@
 import Adsection from "@/components/adsection";
 import CareerRoadmap from "@/components/careerRoadmap";
+import Footer from "@/components/footer";
 import HeroSection from "@/components/hero";
 import RegisteredClzList from "@/components/registeredclzlist";
 import SchoolCollege from "@/components/schoolCollege";
@@ -25,15 +26,16 @@ export default function Home() {
         ]}
       />
       <SchoolCollege />
-      
-     <Adsection
+
+      <Adsection
         adsList={[
           "/adsfiles/texasclz.gif",
           "/adsfiles/thamesclz.gif",
           "/adsfiles/careerconclave.png",
         ]}
       />
-      <Upcommingevent/>
+      <Upcommingevent />
+      <Footer />
     </>
   );
 }
