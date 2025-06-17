@@ -24,6 +24,14 @@ export default function Home() {
         ]}
       />
       <SchoolCollege />
+      
+     <Adsection
+        adsList={[
+          "/adsfiles/texasclz.gif",
+          "/adsfiles/thamesclz.gif",
+          "/adsfiles/careerconclave.png",
+        ]}
+      />
     </>
   );
 }
