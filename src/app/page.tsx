@@ -5,6 +5,7 @@ import HeroSection from "@/components/hero";
 import JoinSection from "@/components/joinus";
 import RegisteredClzList from "@/components/registeredclzlist";
 import SchoolCollege from "@/components/schoolCollege";
+import SubscribeSection from "@/components/subscribe";
 import Testimonials from "@/components/testimonials";
 import Upcommingevent from "@/components/upcomingEvents";
 export default function Home() {
@@ -36,10 +37,11 @@ export default function Home() {
           "/adsfiles/careerconclave.png",
         ]}
       />
-
       <Upcommingevent />
-      <JoinSection/>
+      <JoinSection />
+      <SubscribeSection />
       <Footer />
+    
     </>
   );
 }
