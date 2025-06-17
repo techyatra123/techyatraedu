@@ -11,7 +11,6 @@ export default function Navbar() {
         <li className="cursor-pointer transition hover:-translate-y-0.5 px-2 py-1 rounded">Registered Institutions</li>
         <li className="cursor-pointer transition hover:-translate-y-0.5 px-2 py-1 rounded">Career Roadmap</li>
         <li className="cursor-pointer transition hover:-translate-y-0.5 px-2 py-1 rounded">Institutions</li>
-        {/* <li className="cursor-pointer transition hover:-translate-y-0.5 px-2 py-1 rounded">Colleges</li> */}
         <li className="cursor-pointer transition hover:-translate-y-0.5 px-2 py-1 rounded">Admission</li>
         <li className="cursor-pointer transition hover:-translate-y-0.5 px-2 py-1 rounded">News & Blogs</li>
         <li className="cursor-pointer transition hover:-translate-y-0.5 px-2 py-1 rounded">Events</li>
