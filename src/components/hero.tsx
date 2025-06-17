@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
-import SolarSystemOrbit from "./subcomponents/roundanimation.hero";
+import OrbitingCardsWithHexagon from "./subcomponents/anotheranimation";
 
 const H1ContentList = [
   <>
@@ -38,7 +38,6 @@ const HeroSection: React.FC = () => {
       items-center justify-between 
       px-6 md:px-16 py-12 md:py-0"
     >
-      {/* Left Content */}
       <div className="w-full md:w-1/2 flex flex-col items-start">
         <h1
           className={`text-2xl sm:text-3xl md:text-4xl text-white font-semibold mb-6 transition-opacity duration-500 min-h-[5rem] ${
@@ -67,9 +66,8 @@ const HeroSection: React.FC = () => {
         </div>
       </div>
 
-      {/* Right Animation */}
       <div className="w-full md:w-1/2 relative mt-10 md:mt-0 hidden md:block items-center justify-center">
-        <SolarSystemOrbit />
+        <OrbitingCardsWithHexagon />
       </div>
     </div>
   );
