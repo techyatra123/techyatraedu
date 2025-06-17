@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
-import SolarSystemOrbit from "./subcomponents/roundanimation.hero";
+import OrbitingCardsWithHexagon from "./subcomponents/anotheranimation";
 
 const H1ContentList = [
   <>
@@ -69,7 +69,7 @@ const HeroSection: React.FC = () => {
 
       {/* Right Animation */}
       <div className="w-full md:w-1/2 relative mt-10 md:mt-0 hidden md:block items-center justify-center">
-        <SolarSystemOrbit />
+        <OrbitingCardsWithHexagon />
       </div>
     </div>
   );
