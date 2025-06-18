@@ -3,7 +3,7 @@ import { ChevronRight } from "lucide-react";
 
 export default function InstitutionsHeader() {
   return (
-    <div className="bg-gradient-to-b from-[#383366] to-[#efe5e5] shadow-md p-6 md:p-9 mb-6 flex flex-col items-center justify-center">
+    <div className="bg-gradient-to-b from-[#efe5e5] to-[#6056bb] shadow-md p-6 md:p-9 mb-6 flex flex-col items-center justify-center">
       <h3 className="font-normal text-2xl md:text-4xl text-stone-50 text-center">
         Registered Institutions
       </h3>
