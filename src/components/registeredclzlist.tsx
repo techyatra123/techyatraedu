@@ -40,7 +40,7 @@ const RegisteredColleges = () => {
           <h2 className="text-2xl font-bold">
             Registered Colleges and Schools
           </h2>
-          <a href="#" className="text-indigo-600 hover:underline flex flex-row justify-center items-center gap-2">
+          <a href="/RegisteredInstitutions" className="text-indigo-600 hover:underline flex flex-row justify-center items-center gap-2">
             View more
             <ArrowUpRight className="w-4 h-4" />
           </a>
