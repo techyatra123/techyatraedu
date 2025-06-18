@@ -8,6 +8,7 @@ export default function Navbar() {
       <div className="text-base font-medium mb-2 ml-20 md:mb-0"><Link href="/" className="text-black">TECHYATRA EDU</Link>
       </div>
       <ul className="flex flex-wrap gap-4 text-sm md:text-base overflow-x-auto font-normal mr-16">
+        <li className="cursor-pointer transition hover:-translate-y-0.5 px-2 py-1 rounded"><Link href={"/"}>Home</Link> </li>
         <li className="cursor-pointer transition hover:-translate-y-0.5 px-2 py-1 rounded">Courses</li>
         <li className="cursor-pointer transition hover:-translate-y-0.5 px-2 py-1 rounded">Registered Institutions</li>
         <li className="cursor-pointer transition hover:-translate-y-0.5 px-2 py-1 rounded">Career Roadmap</li>
