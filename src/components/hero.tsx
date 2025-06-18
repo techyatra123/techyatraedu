@@ -32,7 +32,7 @@ const HeroSection: React.FC = () => {
   }, []);
 
   return (
-    <div className="bg-gradient-to-b from-[#383366] to-[#efe5e5] 
+    <div className="bg-gradient-to-b from-[#efe5e5] to-[#383366] 
       min-h-[110vh] md:min-h-[91vh] 
       h-auto flex flex-col md:flex-row 
       items-center justify-between 
