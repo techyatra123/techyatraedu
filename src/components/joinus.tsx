@@ -17,9 +17,7 @@ export default function JoinSection() {
             Explore Nepal’s schools, colleges, and educational paths — empowering
             students with knowledge to make informed and confident future choices.
           </p>
-          <button className="mt-6 bg-white text-[#675bed] font-normal py-1 px-8 rounded-md shadow hover:shadow-2xl hover:bg-gray-100   transition">
-            Sign up
-          </button>
+         
         </div>
 
         
