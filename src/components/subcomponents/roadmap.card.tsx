@@ -7,7 +7,7 @@ type CardProps = {
   path: string;
 };
 
-const Card: React.FC<CardProps> = ({ title, imageSrc, path})=> {
+const RoadmapCard: React.FC<CardProps> = ({ title, imageSrc, path})=> {
   return (
     <div className="bg-white rounded-xl shadow hover:shadow-lg transition p-4 w-full max-w-xs group flex flex-col h-full">
       <div className="h-40 relative mb-4 overflow-hidden rounded-md">
@@ -38,4 +38,4 @@ const Card: React.FC<CardProps> = ({ title, imageSrc, path})=> {
   );
 };
 
-export default Card;
+export default RoadmapCard;
