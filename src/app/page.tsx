@@ -1,3 +1,4 @@
+"use client";
 import Adsection from "@/components/adsection";
 import CareerRoadmap from "@/components/careerRoadmap";
 import HeroSection from "@/components/hero";
