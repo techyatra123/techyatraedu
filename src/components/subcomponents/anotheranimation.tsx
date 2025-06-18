@@ -3,7 +3,7 @@
 import React from "react";
 import { motion, useTime, useTransform, MotionValue } from "framer-motion";
 
-const ORBIT_RADIUS = 240;
+const ORBIT_RADIUS = 230;
 const CARD_COUNT = 8; 
 const BASE_ORBIT_DURATION = 18;
 
@@ -52,7 +52,7 @@ export default function OrbitingCardsWithHexagon(): JSX.Element {
   const progress = useTransform(time, (t) => t / 1000 / BASE_ORBIT_DURATION);
 
   return (
-    <div className="relative w-[60vw] h-[60vw] max-w-[700px] max-h-[700px] flex items-center justify-center">
+    <div className="relative top-[-60px] w-[60vw] h-[60vw] max-w-[700px] max-h-[700px] flex items-center justify-center">
       {/* Hexagon center */}
       <div
         className="absolute w-28 h-28 bg-gradient-to-br from-green-600 to-teal-600 justify-center items-center"

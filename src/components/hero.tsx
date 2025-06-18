@@ -32,13 +32,14 @@ const HeroSection: React.FC = () => {
   }, []);
 
   return (
-    <div className="bg-gradient-to-b from-[#383366] to-[#efe5e5] 
-      min-h-[110vh] md:min-h-[91vh] 
-      h-auto flex flex-col md:flex-row 
-      items-center justify-between 
-      px-6 md:px-16 py-12 md:py-0"
+    <div
+      className="relative bg-gradient-to-b from-[#efe5e5] to-[#6056bb]
+        min-h-[10vh] md:min-h-[80vh]
+        flex flex-col md:flex-row mb-10
+        items-center justify-between
+        px-6 md:px-16 py-12 md:py-0"
     >
-      <div className="w-full md:w-1/2 flex flex-col items-start">
+      <div className="w-full md:w-1/2 flex flex-col items-start z-10">
         <h1
           className={`text-2xl sm:text-3xl md:text-4xl text-white font-semibold mb-6 transition-opacity duration-500 min-h-[5rem] ${
             isVisible ? "opacity-100" : "opacity-0"
@@ -59,15 +60,39 @@ const HeroSection: React.FC = () => {
             <ArrowRight className="absolute right-4 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
           </button>
 
-          <button className="relative px-4 py-3 cursor-pointer   rounded shadow-lg hover:shadow-2xl bg-white transition duration-300 flex items-center justify-center w-full sm:w-[300px] group border-2 border-blue-700">
+          <button className="relative px-4 py-3 cursor-pointer rounded shadow-lg hover:shadow-2xl bg-white transition duration-300 flex items-center justify-center w-full sm:w-[300px] group border-2 border-blue-700">
             <span className="text-center text-blue-700">Explore Institutions</span>
             <ArrowRight className="absolute text-blue-500 right-4 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
           </button>
         </div>
       </div>
 
-      <div className="w-full md:w-1/2 relative mt-10 md:mt-0 hidden md:block items-center justify-center">
+      <div className="w-full md:w-1/2 relative mt-10 md:mt-0 hidden md:block items-center justify-center z-10">
         <OrbitingCardsWithHexagon />
+      </div>
+
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden z-0">
+        <svg
+          viewBox="0 0 1200 100"
+          preserveAspectRatio="none"
+          className="w-full h-[80px]"
+        >
+          <path
+            d="M0,0 C150,100 350,0 600,50 C850,100 1050,0 1200,50 L1200,100 L0,100 Z"
+            fill="#ffffff"
+          >
+            <animate
+              attributeName="d"
+              dur="10s"
+              repeatCount="indefinite"
+              values="
+                M0,0 C150,100 350,0 600,50 C850,100 1050,0 1200,50 L1200,100 L0,100 Z;
+                M0,0 C150,50 350,100 600,50 C850,0 1050,100 1200,50 L1200,100 L0,100 Z;
+                M0,0 C150,100 350,0 600,50 C850,100 1050,0 1200,50 L1200,100 L0,100 Z
+              "
+            />
+          </path>
+        </svg>
       </div>
     </div>
   );

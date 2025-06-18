@@ -1,5 +1,5 @@
 import Adsection from "@/components/adsection";
-import InstitutionsHeader from "@/components/subpageComponents/registered.instututions";
+import InstitutionsHeader from "@/components/subpageComponents/registered.institutions";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return <div>
@@ -12,5 +12,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             ]}
           />
     {children}
+    <Adsection
+            adsList={[
+              "/adsfiles/uniglobe.gif",
+              "/adsfiles/ncmt.gif",
+              "/adsfiles/globalcollege.gif",
+            ]}
+          />
   </div>;
 }

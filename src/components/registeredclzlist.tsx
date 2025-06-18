@@ -1,3 +1,4 @@
+import Link from "next/link";
 import CollegeCard from "./subcomponents/registered.clzcard";
 import { ArrowUpRight } from "lucide-react";
 
@@ -40,10 +41,10 @@ const RegisteredColleges = () => {
           <h2 className="text-2xl font-bold">
             Registered Colleges and Schools
           </h2>
-          <a href="#" className="text-indigo-600 hover:underline flex flex-row justify-center items-center gap-2">
+          <Link href="/RegisteredInstitutions" className="text-indigo-600 hover:underline flex flex-row justify-center items-center gap-2">
             View more
             <ArrowUpRight className="w-4 h-4" />
-          </a>
+          </Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {colleges.map((college, index) => (

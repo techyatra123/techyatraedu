@@ -27,13 +27,10 @@ export default function Footer() {
           <ul className="space-y-2 text-gray-300">
             <li>Courses</li>
             <li>Career Roadmap</li>
-            <li>Schools</li>
-            <li>Colleges</li>
-            <li>Aadmission</li>
+            <li>Institutions</li>
+            <li>Admission</li>
             <li>News & Blogs</li>
             <li>Registered Colleges</li>
-            <li>Project Showcase</li>
-            <li>Events</li>
           </ul>
         </div>
 
