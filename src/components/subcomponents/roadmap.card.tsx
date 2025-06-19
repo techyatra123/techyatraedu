@@ -1,12 +1,13 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type CardProps = {
   title: string;
   imageSrc: string;
-  onClick?: () => void;
+  path: string;
 };
 
-const Card: React.FC<CardProps> = ({ title, imageSrc, onClick }) => {
+const RoadmapCard: React.FC<CardProps> = ({ title, imageSrc, path})=> {
   return (
     <div className="bg-white rounded-xl shadow hover:shadow-lg transition p-4 w-full max-w-xs group flex flex-col h-full">
       <div className="h-40 relative mb-4 overflow-hidden rounded-md">
@@ -26,13 +27,15 @@ const Card: React.FC<CardProps> = ({ title, imageSrc, onClick }) => {
       </div>
 
       <button
-        onClick={onClick}
+        
         className="bg-indigo-600 cursor-pointer hover:bg-indigo-700 text-white px-4 py-2 rounded-md w-full mt-auto"
       >
+        <Link href={path} className="flex items-center justify-center gap-2 w-full">
         View More
+        </Link>
       </button>
     </div>
   );
 };
 
-export default Card;
+export default RoadmapCard;
