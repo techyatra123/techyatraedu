@@ -26,7 +26,7 @@ const moreRoadmap = [
   {
     title: "Data Science",
     image: "/roadmap/datascience.jpg",
-    path: "/RoadMaps/ai",
+    path: "/RoadMaps/datascience",
   },
 ];
 
