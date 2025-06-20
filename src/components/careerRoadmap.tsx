@@ -32,7 +32,7 @@ const CareerRoadmap: React.FC = () => {
         <div className="flex justify-between items-center mb-8">
           <h2 className="text-2xl font-bold">Career Roadmap for you</h2>
           <Link
-            href="/RoadMaps"
+            href="/roadmaps"
             className="text-indigo-600 hover:text-shadow-lg flex flex-row justify-center items-center gap-2 bottom-0"
           >
             View more

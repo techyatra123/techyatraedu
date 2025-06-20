@@ -16,17 +16,17 @@ const moreRoadmap = [
   {
     title: "Frontend Development",
     image: "/roadmap/frontendroadmap.jpg",
-    path: "/RoadMaps/frontend",
+    path: "/roadmaps/frontend",
   },
   {
     title: "Artificial Intelligence",
     image: "/roadmap/ai.jpg",
-    path: "/RoadMaps/ai",
+    path: "/roadmaps/ai",
   },
   {
     title: "Data Science",
     image: "/roadmap/datascience.jpg",
-    path: "/RoadMaps/datascience",
+    path: "/roadmaps/datascience",
   },
 ];
 

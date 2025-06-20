@@ -16,17 +16,17 @@ const moreRoadmap = [
   {
     title: "Frontend Development",
     image: "/roadmap/frontendroadmap.jpg",
-    path: "/RoadMaps/frontend",
+    path: "/roadmaps/frontend",
   },
   {
     title: "Cyber Security",
     image: "/roadmap/cybersecurity.jpg",
-    path: "/RoadMaps/ai",
+    path: "/roadmaps/ai",
   },
   {
     title: "Data Science",
     image: "/roadmap/datascience.jpg",
-    path: "/RoadMaps/ai",
+    path: "/roadmaps/ai",
   },
 ];
 
@@ -172,7 +172,7 @@ const CareerScopeAi: FC = () => {
             ))}
           </div>
 
-          {/* More Roadmaps */}
+          {/* More roadmaps */}
           <div className="space-y-4">
             {moreRoadmap.map((card, index) => (
               <div key={index}>
