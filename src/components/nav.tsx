@@ -6,7 +6,7 @@ export default function Navbar() {
       <div className="container mx-auto flex flex-wrap items-center justify-between">
         <div className="text-lg font-semibold ml-2 md:ml-0">
           <Link href="/" className="text-black">
-            TECHYATRA EDU
+            EDU YATRA
           </Link>
         </div>
         <ul className="flex flex-wrap gap-4 text-sm md:text-base font-normal mt-2 md:mt-0">

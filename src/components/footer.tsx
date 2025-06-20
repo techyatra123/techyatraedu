@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
           <h2 className="text-xl font-bold">
-            TECHYATRA <span className="block text-3xl">EDU</span>
+            EDU <span className="block text-3xl">YATRA</span>
           </h2>
           <p className="mt-4 text-gray-300">
             A perfect hub for anything related to <br /> education of and in
