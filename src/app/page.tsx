@@ -7,7 +7,8 @@ import RegisteredClzList from "@/components/registeredclzlist";
 import SchoolCollege from "@/components/schoolCollege";
 import SubscribeSection from "@/components/subscribe";
 import Testimonials from "@/components/testimonials";
-import Upcommingevent from "@/components/upcomingEvents";
+import Upcommingevent from "@/components/newsandblogsoneline";
+import { AllNewsData } from "./newsblogs/page";
 export default function Home() {
   return (
     <>
@@ -37,7 +38,7 @@ export default function Home() {
           "/adsfiles/careerconclave.png",
         ]}
       />
-      <Upcommingevent />
+      <Upcommingevent AllNewsData={AllNewsData}/>
       <JoinSection />
       <SubscribeSection />
     
