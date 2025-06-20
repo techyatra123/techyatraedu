@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import {
   Facebook,
   Linkedin,
@@ -25,12 +25,26 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold mb-4">For Students</h3>
           <ul className="space-y-2 text-gray-300">
-            <li>Courses</li>
-            <li>Career Roadmap</li>
-            <li>Institutions</li>
-            <li>Admission</li>
-            <li>News & Blogs</li>
-            <li>Registered Colleges</li>
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/courses">Courses</Link>
+            </li>
+            <li>
+              <Link href="/registeredinstitutions">
+                Registered Institutions
+              </Link>
+            </li>
+            <li>
+              <Link href="/roadmaps">Career Roadmap</Link>
+            </li>
+            <li>
+              <Link href="/institutions">Institutions</Link>
+            </li>
+            <li>
+              <Link href="/newsblogs">News & Blogs</Link>
+            </li>
           </ul>
         </div>
 
@@ -50,7 +64,7 @@ export default function Footer() {
           <p className="text-gray-300">Shantinagar, Kathmandu, Nepal</p>
           <p className="text-gray-300 mt-2">+977-9876543212</p>
           <p className="text-gray-300">+977-01434534</p>
-          <p className="text-gray-300 mt-2">@info.techyatraedu.com.np</p>
+          <p className="text-gray-300 mt-2">info@techyatraedu.com.np</p>
         </div>
       </div>
 
