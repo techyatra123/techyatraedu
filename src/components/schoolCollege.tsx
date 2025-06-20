@@ -2,7 +2,7 @@
 
 import SchoolCard from "./subcomponents/schoolCollege.card";
 import { ArrowUpRight } from "lucide-react";
-
+import { motion } from "framer-motion";
 const schools = [
   {
     name: "Softwarica College of IT and E-Commerce",
@@ -39,26 +39,32 @@ const schools = [
 
 export default function SchoolCollege() {
   return (
-    <div className="bg-[#f7f8ff] py-12 px-4 sm:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex justify-between items-center mb-8">
-          <h2 className="text-2xl font-bold text-gray-900">
-            Schools and Colleges for you
-          </h2>
-          <a
-            href="#"
-            className="text-indigo-600 hover:underline flex flex-row justify-center items-center gap-2"
-          >
-            View more
-            <ArrowUpRight className="w-4 h-4" />
-          </a>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {schools.map((school, idx) => (
-            <SchoolCard key={idx} {...school} />
-          ))}
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7, delay: 0.3 }}
+    >
+      <div className="bg-[#f7f8ff] py-12 px-4 sm:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex justify-between items-center mb-8">
+            <h2 className="text-2xl font-bold text-gray-900">
+              Schools and Colleges for you
+            </h2>
+            <a
+              href="#"
+              className="text-indigo-600 hover:underline flex flex-row justify-center items-center gap-2"
+            >
+              View more
+              <ArrowUpRight className="w-4 h-4" />
+            </a>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {schools.map((school, idx) => (
+              <SchoolCard key={idx} {...school} />
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

@@ -1,5 +1,5 @@
 "use client";
-
+import { motion } from "framer-motion";
 import React from "react";
 import Image from "next/image";
 const data = {
@@ -86,87 +86,91 @@ const data = {
 };
 export default function AICourse() {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8 text-gray-800">
-      {/* Title */}
-      <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center">
-        {data.courseOverview.title}
-      </h2>
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 0.3 }}
+      viewport={{ once: true }}
+    >
+      <div className="max-w-7xl mx-auto px-4 py-8 text-gray-800">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center">
+          {data.courseOverview.title}
+        </h2>
 
-      {/* Overview Section */}
-      <div className="flex flex-col lg:flex-row gap-6 items-center mb-10">
-        <div className="w-full lg:w-1/2">
-          <Image
-            src="/roadmap/ai.jpg"
-            alt="AI Course Roadmap"
-            width={500}
-            height={400}
-            className="w-full h-auto rounded-lg shadow transform transition-transform duration-300 hover:scale-[1.01] ease-out hover:shadow-2xl"
-          />
+        <div className="flex flex-col lg:flex-row gap-6 items-center mb-10">
+          <div className="w-full lg:w-1/2">
+            <Image
+              src="/roadmap/ai.jpg"
+              alt="AI Course Roadmap"
+              width={500}
+              height={400}
+              className="w-full h-auto rounded-lg shadow transform transition-transform duration-300 hover:scale-[1.01] ease-out hover:shadow-2xl"
+            />
+          </div>
+          <div className="w-full lg:w-1/2">
+            <p className="mb-4">{data.courseOverview.description}</p>
+            <p>{data.courseOverview.subDescription}</p>
+          </div>
         </div>
-        <div className="w-full lg:w-1/2">
-          <p className="mb-4">{data.courseOverview.description}</p>
-          <p>{data.courseOverview.subDescription}</p>
-        </div>
+
+        <section className="mb-12">
+          <h3 className="text-2xl font-semibold mb-6 text-center">
+            Course Modules
+          </h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {data.modules.map((module, index) => (
+              <div
+                key={index}
+                className="p-5 border rounded-xl shadow bg-white hover:shadow-lg transform transition-transform duration-300 hover:scale-[1.01] ease-out"
+              >
+                <h4 className="text-lg font-semibold mb-3">{module.title}</h4>
+                <ul className="list-disc list-inside text-sm space-y-1">
+                  {module.sessions.map((session, idx) => (
+                    <li key={idx}>{session}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-12">
+          <h3 className="text-2xl font-semibold mb-6 text-center">
+            Upcoming Sessions
+          </h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {data.sessions.map((session, idx) => (
+              <div
+                key={idx}
+                className="bg-blue-50 border p-5 rounded-xl shadow hover:shadow-xl transform transition-transform duration-300 hover:scale-[1.01] ease-out"
+              >
+                <h4 className="text-lg font-bold">{session.college}</h4>
+                <p className="text-sm mt-1">{session.date}</p>
+                <p className="text-sm">{session.time}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="bg-gray-50 p-8 rounded-xl shadow text-center">
+          <h3 className="text-2xl font-bold mb-3">
+            Certificate upon Completion
+          </h3>
+          <p className="mb-6">
+            Add this credential to your LinkedIn profile, resume, or CV to stand
+            out to recruiters.
+          </p>
+          <div className="inline-block border-2 border-dashed border-gray-400 p-6 rounded-lg bg-white">
+            <Image
+              src="/certification/certificate.png"
+              alt="AI Course Roadmap"
+              width={500}
+              height={400}
+              className="w-full h-auto rounded-lg shadow transform transition-transform duration-75 hover:scale-[1.01] ease-out hover:shadow-2xl mx-auto"
+            />
+          </div>
+        </section>
       </div>
-
-      {/* Modules */}
-      <section className="mb-12">
-        <h3 className="text-2xl font-semibold mb-6 text-center">
-          Course Modules
-        </h3>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {data.modules.map((module, index) => (
-            <div
-              key={index}
-              className="p-5 border rounded-xl shadow bg-white hover:shadow-lg transform transition-transform duration-300 hover:scale-[1.01] ease-out"
-            >
-              <h4 className="text-lg font-semibold mb-3">{module.title}</h4>
-              <ul className="list-disc list-inside text-sm space-y-1">
-                {module.sessions.map((session, idx) => (
-                  <li key={idx}>{session}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Upcoming Sessions */}
-      <section className="mb-12">
-        <h3 className="text-2xl font-semibold mb-6 text-center">
-          Upcoming Sessions
-        </h3>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {data.sessions.map((session, idx) => (
-            <div
-              key={idx}
-              className="bg-blue-50 border p-5 rounded-xl shadow hover:shadow-xl transform transition-transform duration-300 hover:scale-[1.01] ease-out"
-            >
-              <h4 className="text-lg font-bold">{session.college}</h4>
-              <p className="text-sm mt-1">{session.date}</p>
-              <p className="text-sm">{session.time}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Certificate Section */}
-      <section className="bg-gray-50 p-8 rounded-xl shadow text-center">
-        <h3 className="text-2xl font-bold mb-3">Certificate upon Completion</h3>
-        <p className="mb-6">
-          Add this credential to your LinkedIn profile, resume, or CV to stand
-          out to recruiters.
-        </p>
-        <div className="inline-block border-2 border-dashed border-gray-400 p-6 rounded-lg bg-white">
-          <Image
-            src="/certification/certificate.png"
-            alt="AI Course Roadmap"
-            width={500}
-            height={400}
-            className="w-full h-auto rounded-lg shadow transform transition-transform duration-75 hover:scale-[1.01] ease-out hover:shadow-2xl mx-auto"
-          />
-        </div>
-      </section>
-    </div>
+    </motion.div>
   );
 }
