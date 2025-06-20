@@ -5,42 +5,42 @@ const RoadmapData = [
   {
     title: "Frontend Development",
     image: "/roadmap/frontendroadmap.jpg",
-    path: "/RoadMaps/frontend",
+    path: "/roadmaps/frontend",
   },
   {
     title: "Artificial Intelligence",
     image: "/roadmap/ai.jpg",
-    path: "/RoadMaps/ai",
+    path: "/roadmaps/ai",
   },
   {
     title: "Data Science",
     image: "/roadmap/datascience.jpg",
-    path: "/RoadMaps/ai",
+    path: "/roadmaps/ai",
   },
   {
     title: "Cyber Security",
     image: "/roadmap/cybersecurity.jpg",
-    path: "/RoadMaps/ai",
+    path: "/roadmaps/ai",
   },
   {
     title: "DevOps",
     image: "/roadmap/devops.png",
-    path: "/RoadMaps/ai",
+    path: "/roadmaps/ai",
   },
   {
     title: "Full Stack Development",
     image: "/roadmap/fullstackroadmap.png",
-    path: "/RoadMaps/ai",
+    path: "/roadmaps/ai",
   },
   {
     title: "UX Design",
     image: "/roadmap/uiuxroadmap.png",
-    path: "/RoadMaps/ai",
+    path: "/roadmaps/ai",
   },
   {
     title: "Backend Development",
     image: "/roadmap/backendroadmap.png",
-    path: "/RoadMaps/ai",
+    path: "/roadmaps/ai",
   },
 ];
 const CareerRoadmapGrid = () => {
