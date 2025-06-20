@@ -19,63 +19,92 @@ const moreRoadmap = [
     path: "/RoadMaps/frontend",
   },
   {
-    title: "Artificial Intelligence",
-    image: "/roadmap/ai.jpg",
+    title: "Cyber Security",
+    image: "/roadmap/cybersecurity.jpg",
     path: "/RoadMaps/ai",
   },
   {
     title: "Data Science",
     image: "/roadmap/datascience.jpg",
-    path: "/RoadMaps/datascience",
+    path: "/RoadMaps/ai",
   },
 ];
 
 const careerData: CareerItem[] = [
   {
-    title: "1. Frontend Developer",
-    description: "Role: Build user-facing parts of websites and web applications.",
-    skills: ["HTML", "CSS", "JavaScript", "React", "Angular", "Vue"],
-    jobDemand: "Very high worldwide, including remote opportunities.",
-  },
-  {
-    title: "2. UI/UX Developer",
+    title: "1. AI/ML Engineer",
     description:
-      "Role: Bridge the gap between UI/UX design and development by translating designs into code.",
-    skills: ["HTML", "CSS", "JavaScript", "Figma", "design understanding"],
+      "Role: Develop machine learning models, handle datasets, and automate decision-making.",
+    skills: [
+      "Python",
+      "TensorFlow",
+      "Scikit-Learn",
+      "Pandas",
+      "NumPy",
+      "basic algorithms",
+    ],
+    jobDemand: "High demand globally for AI talent across industries.",
   },
   {
-    title: "3. Web Designer",
+    title: "2. Data Analyst",
     description:
-      "Role: Focus on the visual aspects of websites with basic coding.",
-    skills: ["HTML", "CSS", "Figma", "Photoshop", "Illustrator"],
+      "Role: Analyze large datasets to find patterns, trends, and insights.",
+    skills: ["SQL", "Python", "Power BI/Tableau", "Excel", "basic statistics"],
+    jobDemand: "Strong demand in business, healthcare, finance, and tech.",
   },
   {
-    title: "4. Mobile Frontend Developer",
+    title: "3. Data Scientist",
     description:
-      "Role: Build mobile-friendly user interfaces, sometimes using frameworks like React Native or Flutter.",
-    skills: ["HTML", "CSS", "JavaScript", "React Native (optional)"],
+      "Role: Work with complex data to build predictive models and perform data-driven decision-making.",
+    skills: [
+      "Python",
+      "R",
+      "SQL",
+      "Machine Learning basics",
+      "data visualization",
+    ],
+    jobDemand:
+      "Critical role in AI-driven decision-making and product strategy.",
   },
   {
-    title: "5. WordPress Developer",
+    title: "4. Machine Learning Engineer",
     description:
-      "Role: Create and customize websites using WordPress themes and plugins.",
-    skills: ["HTML", "CSS", "WordPress", "basic PHP"],
+      "Role: Design and deploy machine learning models into production environments.",
+    skills: [
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "APIs",
+      "software engineering principles",
+    ],
+    jobDemand: "In-demand in AI-driven product companies and startups.",
   },
   {
-    title: "6. Email Template Developer",
-    description: "Role: Design responsive email templates for marketing.",
-    skills: ["HTML", "CSS (email-specific best practices)"],
-  },
-  {
-    title: "7. Freelance Frontend Developer",
+    title: "5. AI Developer for Chatbots and NLP",
     description:
-      "Scope: Work independently on global freelance platforms like Upwork, Fiverr, and Freelancer.",
+      "Role: Develop chatbots, voice assistants, and Natural Language Processing (NLP) solutions.",
+    skills: ["Python", "NLP libraries (spaCy, NLTK)", "chatbot frameworks"],
+    jobDemand: "Growing market with increasing use of conversational AI.",
   },
   {
-    title: "8. Frontend Testing/QA Specialist",
+    title: "6. Computer Vision Developer",
     description:
-      "Role: Focus on frontend usability, responsiveness, and cross-browser compatibility.",
-    skills: ["Basic frontend", "Selenium", "Cypress (optional)"],
+      "Role: Work on image processing, object detection, facial recognition, etc.",
+    skills: ["OpenCV", "TensorFlow", "deep learning"],
+    jobDemand: "High demand in healthcare, security, automotive, and robotics.",
+  },
+  {
+    title: "7. AI Software Engineer",
+    description: "Role: Build software that integrates AI components.",
+    skills: ["Python", "APIs", "cloud platforms (AWS, Azure, Google Cloud)"],
+    jobDemand: "Essential in deploying scalable AI solutions.",
+  },
+  {
+    title: "8. Robotic Process Automation (RPA) Developer",
+    description: "Role: Automate repetitive tasks using AI-driven RPA tools.",
+    skills: ["Python", "RPA tools (UiPath, Blue Prism)"],
+    jobDemand:
+      "Used in enterprise automation in finance, HR, and customer service.",
   },
 ];
 
@@ -85,11 +114,11 @@ const adsection = [
   "/adsfiles/thamesclz.gif",
 ];
 
-const CareerScope: FC = () => {
+const CareerScopeAi: FC = () => {
   return (
     <section className="w-full px-4 py-8 max-w-7xl mx-auto">
       <h2 className="text-2xl font-bold text-center text-blue-800 mb-10">
-        Career Scope After Frontend Training
+        Career Scope After Artificial Intelligence 
       </h2>
       <div className="flex flex-col lg:flex-row gap-8">
         {/* Main Content */}
@@ -161,4 +190,4 @@ const CareerScope: FC = () => {
   );
 };
 
-export default CareerScope;
+export default CareerScopeAi;

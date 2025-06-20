@@ -19,65 +19,69 @@ const moreRoadmap = [
     path: "/RoadMaps/frontend",
   },
   {
-    title: "Artificial Intelligence",
-    image: "/roadmap/ai.jpg",
+    title: "Cyber Security",
+    image: "/roadmap/cybersecurity.jpg",
     path: "/RoadMaps/ai",
   },
   {
-    title: "Data Science",
-    image: "/roadmap/datascience.jpg",
-    path: "/RoadMaps/datascience",
+    title: "Artificial Intelligence",
+    image: "/roadmap/ai.jpg",
+    path: "/RoadMaps/ai",
   },
 ];
 
 const careerData: CareerItem[] = [
   {
-    title: "1. Frontend Developer",
-    description: "Role: Build user-facing parts of websites and web applications.",
-    skills: ["HTML", "CSS", "JavaScript", "React", "Angular", "Vue"],
-    jobDemand: "Very high worldwide, including remote opportunities.",
-  },
-  {
-    title: "2. UI/UX Developer",
+    title: "1. Data Analyst",
     description:
-      "Role: Bridge the gap between UI/UX design and development by translating designs into code.",
-    skills: ["HTML", "CSS", "JavaScript", "Figma", "design understanding"],
+      "Role: Interpret data, generate reports, and provide insights to help businesses make decisions.",
+    skills: ["SQL", "Python", "Excel", "Tableau/Power BI", "basic statistics"],
+    jobDemand: "High demand across industries like finance, healthcare, and e-commerce.",
   },
   {
-    title: "3. Web Designer",
+    title: "2. Data Scientist",
     description:
-      "Role: Focus on the visual aspects of websites with basic coding.",
-    skills: ["HTML", "CSS", "Figma", "Photoshop", "Illustrator"],
+      "Role: Build statistical models, develop machine learning algorithms, and analyze complex datasets.",
+    skills: ["Python", "R", "SQL", "Machine Learning basics", "data visualization"],
+    jobDemand: "Core role in driving data-driven strategy in modern businesses.",
   },
   {
-    title: "4. Mobile Frontend Developer",
+    title: "3. Business Intelligence (BI) Analyst",
     description:
-      "Role: Build mobile-friendly user interfaces, sometimes using frameworks like React Native or Flutter.",
-    skills: ["HTML", "CSS", "JavaScript", "React Native (optional)"],
+      "Role: Transform raw data into actionable dashboards and reports for business growth.",
+    skills: ["Power BI", "Tableau", "SQL", "Excel", "business strategy understanding"],
+    jobDemand: "Highly sought after in corporate strategy and performance teams.",
   },
   {
-    title: "5. WordPress Developer",
+    title: "4. Data Engineer (Entry-Level)",
     description:
-      "Role: Create and customize websites using WordPress themes and plugins.",
-    skills: ["HTML", "CSS", "WordPress", "basic PHP"],
+      "Role: Build and maintain data pipelines, databases, and data infrastructure.",
+    skills: ["Python", "SQL", "cloud storage", "ETL tools"],
+    jobDemand: "Key role for enabling data access and processing in organizations.",
   },
   {
-    title: "6. Email Template Developer",
-    description: "Role: Design responsive email templates for marketing.",
-    skills: ["HTML", "CSS (email-specific best practices)"],
-  },
-  {
-    title: "7. Freelance Frontend Developer",
+    title: "5. Data Science Intern",
     description:
-      "Scope: Work independently on global freelance platforms like Upwork, Fiverr, and Freelancer.",
+      "Role: Assist in data cleaning, exploration, and preliminary model building.",
+    skills: ["Python", "Pandas", "Excel", "visualization tools"],
+    jobDemand: "Common entry point into data science roles for freshers.",
   },
   {
-    title: "8. Frontend Testing/QA Specialist",
+    title: "6. Machine Learning Engineer",
     description:
-      "Role: Focus on frontend usability, responsiveness, and cross-browser compatibility.",
-    skills: ["Basic frontend", "Selenium", "Cypress (optional)"],
+      "Role: Develop and deploy simple machine learning models.",
+    skills: ["Python", "Scikit-learn", "TensorFlow basics"],
+    jobDemand: "Growing demand in product and automation teams.",
+  },
+  {
+    title: "7. Data Visualization Specialist",
+    description:
+      "Role: Focus on visual storytelling with data using interactive dashboards and charts.",
+    skills: ["Tableau", "Power BI", "Python", "D3.js (optional)"],
+    jobDemand: "In demand for enhancing data communication and executive reporting.",
   },
 ];
+
 
 const adsection = [
   "/adsfiles/uniglobe.gif",
@@ -85,11 +89,11 @@ const adsection = [
   "/adsfiles/thamesclz.gif",
 ];
 
-const CareerScope: FC = () => {
+const CareerScopeDs: FC = () => {
   return (
     <section className="w-full px-4 py-8 max-w-7xl mx-auto">
       <h2 className="text-2xl font-bold text-center text-blue-800 mb-10">
-        Career Scope After Frontend Training
+        Career Scope After Artificial Intelligence 
       </h2>
       <div className="flex flex-col lg:flex-row gap-8">
         {/* Main Content */}
@@ -161,4 +165,4 @@ const CareerScope: FC = () => {
   );
 };
 
-export default CareerScope;
+export default CareerScopeDs;

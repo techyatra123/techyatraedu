@@ -1,9 +1,9 @@
-import InstitutionsHeader from "@/components/subpageComponents/subpageHeader";
+import SubpageHeader from "@/components/subpageComponents/subpageHeader";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div>
-      <InstitutionsHeader Page={"Registered Institutions"}/>
+      <SubpageHeader Page={"Career Roadmap"}/>
       {children}
     </div>
   );

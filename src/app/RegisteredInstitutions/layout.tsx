@@ -1,9 +1,9 @@
 import Adsection from "@/components/adsection";
-import InstitutionsHeader from "@/components/subpageComponents/subpageHeader";
+import SubpageHeader from "@/components/subpageComponents/subpageHeader";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return <div>
-    <InstitutionsHeader Page={"Registered Institutions"}/>
+    <SubpageHeader Page={"Registered Institutions"}/>
        <Adsection
             adsList={[
               "/adsfiles/texasclz.gif",
