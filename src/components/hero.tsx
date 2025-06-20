@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 import OrbitingCardsWithHexagon from "./subcomponents/anotheranimation";
+import { motion } from "framer-motion";
 
 const H1ContentList = [
   <>
@@ -40,35 +41,48 @@ const HeroSection: React.FC = () => {
         px-6 md:px-16 py-12 md:py-0"
     >
       <div className="w-full md:w-1/2 flex flex-col items-start z-10">
-        <h1
-          className={`text-2xl sm:text-3xl md:text-4xl text-white font-semibold mb-6 transition-opacity duration-500 min-h-[5rem] ${
-            isVisible ? "opacity-100" : "opacity-0"
-          }`}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
         >
-          {H1ContentList[currentIndex]}
-        </h1>
+          <h1
+            className={`text-2xl sm:text-3xl md:text-4xl text-white font-semibold mb-6 transition-opacity duration-500 min-h-[5rem] ${
+              isVisible ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            {H1ContentList[currentIndex]}
+          </h1>
 
-        <p className="text-sm sm:text-base md:text-lg text-blue-950 mb-8 max-w-xl pt-12 md:pt-0">
-          Explore Nepal&apos;s schools, colleges, and educational paths – empowering students{" "}
-          <br className="hidden sm:block" />
-          with knowledge to make informed and confident future choices.
-        </p>
+          <p className="text-sm sm:text-base md:text-lg text-blue-950 mb-8 max-w-xl pt-12 md:pt-0">
+            Explore Nepal&apos;s schools, colleges, and educational paths –
+            empowering students <br className="hidden sm:block" />
+            with knowledge to make informed and confident future choices.
+          </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 w-full pt-12 md:pt-0">
-          <button className="relative bg-blue-500 cursor-pointer text-white px-4 py-3 rounded shadow-lg hover:shadow-2xl transition duration-300 flex items-center justify-center w-full sm:w-[300px] group">
-            <span className="text-center">Explore our Courses</span>
-            <ArrowRight className="absolute right-4 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-          </button>
+          <div className="flex flex-col sm:flex-row gap-4 w-full pt-12 md:pt-0">
+            <button className="relative bg-blue-500 cursor-pointer text-white px-4 py-3 rounded shadow-lg hover:shadow-2xl transition duration-300 flex items-center justify-center w-full sm:w-[300px] group">
+              <span className="text-center">Explore our Courses</span>
+              <ArrowRight className="absolute right-4 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+            </button>
 
-          <button className="relative px-4 py-3 cursor-pointer rounded shadow-lg hover:shadow-2xl bg-white transition duration-300 flex items-center justify-center w-full sm:w-[300px] group border-2 border-blue-700">
-            <span className="text-center text-blue-700">Explore Institutions</span>
-            <ArrowRight className="absolute text-blue-500 right-4 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
-          </button>
-        </div>
+            <button className="relative px-4 py-3 cursor-pointer rounded shadow-lg hover:shadow-2xl bg-white transition duration-300 flex items-center justify-center w-full sm:w-[300px] group border-2 border-blue-700">
+              <span className="text-center text-blue-700">
+                Explore Institutions
+              </span>
+              <ArrowRight className="absolute text-blue-500 right-4 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
+            </button>
+          </div>
+        </motion.div>
       </div>
-
       <div className="w-full md:w-1/2 relative mt-10 md:mt-0 hidden md:block items-center justify-center z-10">
-        <OrbitingCardsWithHexagon />
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 30 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          <OrbitingCardsWithHexagon />
+        </motion.div>
       </div>
 
       <div className="absolute bottom-0 left-0 w-full overflow-hidden z-0">

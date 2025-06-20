@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Sidebar from "@/components/subpageComponents/sidebar.registered.institutions";
 import CollegeCard from "@/components/subcomponents/registered.clzcard";
-
+import { motion } from "framer-motion";
 const allColleges = [
   {
     name: "Islington College",
@@ -22,7 +22,7 @@ const allColleges = [
     trainingProgram: "Data Science",
     status: "Active",
   },
-    {
+  {
     name: "Softwarica College of IT & E-commerce",
     location: "Kathmandu",
     image: "/collegeImage/softwaricacollege.jpg",
@@ -67,7 +67,7 @@ const allColleges = [
     trainingProgram: "Web Design",
     status: "Upcoming",
   },
-    {
+  {
     name: "Nepal College of Information Technology",
     location: "Kathmandu",
     image: "/collegeImage/ncitnepal.png",
@@ -76,7 +76,7 @@ const allColleges = [
     trainingProgram: "Web Design",
     status: "Upcoming",
   },
-   {
+  {
     name: "United Academy",
     location: "Kathmandu",
     image: "/collegeImage/unitedacademy.jpg",
@@ -130,17 +130,25 @@ const RegisteredColleges = () => {
       <Sidebar filters={filters} onFilterChange={handleFilterChange} />
       <main className="flex-1 p-6">
         <h1 className="text-2xl font-bold mb-6">Registered Colleges</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredColleges.map((college, index) => (
-            <CollegeCard
-              key={index}
-              title={college.name}
-              location={college.location}
-              date={college.date}
-              time="10:00 AM" // You can replace this with actual data if available
-              imageUrl={college.image ?? college.imageurl ?? ""}
-            />
-          ))}
+        <div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            {filteredColleges.map((college, index) => (
+              <CollegeCard
+                key={index}
+                title={college.name}
+                location={college.location}
+                date={college.date}
+                time="10:00 AM"
+                imageUrl={college.image ?? college.imageurl ?? ""}
+              />
+            ))}
+          </motion.div>
         </div>
       </main>
     </div>
